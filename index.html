@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priya Dental Care | Expert Dentists in Dasarahosahalli, Kolar</title>
+    <meta name="description" content="Priya Dental Care in Dasarahosahalli, Kolar offers advanced dental treatments, orthodontics, root canals, and cosmetic dentistry. Led by Dr. Priyadarshini S. Book your appointment online today!">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Priya Dental Care | Clinic in Kolar">
+    <meta property="og:description" content="Schedule an appointment with Dr. Priyadarshini S at Dasarahosahalli's leading dental clinic. Complete oral care & advanced diagnostics.">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Leaflet.js Map CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="#" class="logo" id="header-logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2C6.5 2 2 6 2 12c0 2.5 1.5 5 3.5 6.5.5.4 1 1 1 2 0 1 .5 1.5 1.5 1.5h8c1 0 1.5-.5 1.5-1.5 0-1 .5-1.6 1-2 2-1.5 3.5-4 3.5-6.5 0-6-4.5-10-10-10z"></path>
+                    <path d="M8 8.5c1 0 2-.5 2-1.5s-.5-1-1.5-1"></path>
+                </svg>
+                <span class="logo-text">Priya <span class="logo-highlight">Dental</span></span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#doctor" class="nav-link">Our Doctor</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#reviews" class="nav-link">Reviews</a>
+                <a href="#faqs" class="nav-link">FAQs</a>
+                <a href="#booking" class="nav-link">Book Appointment</a>
+                <a href="#contact" class="nav-link">Contacts</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle visual theme">
+                    <!-- Sun Icon (Light Mode) -->
+                    <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+                    </svg>
+                    <!-- Moon Icon (Dark Mode) -->
+                    <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                    </svg>
+                </button>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="about">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge-claimed">
+                        <span class="pulse-dot"></span> Verified & Claimed Clinic
+                    </div>
+                    <h1 class="hero-title">Experience Modern, Caring Dentistry at <span class="text-gradient">Priya Dental Care</span></h1>
+                    <p class="hero-subtitle">Led by <strong>Dr. Priyadarshini S</strong>, our clinic provides state-of-the-art dental services and treatments with a commitment to patient satisfaction, comfort, and exceptional oral health care.</p>
+                    
+                    <div class="rating-summary-hero">
+                        <div class="stars">
+                            <span class="star-fill">★</span>
+                            <span class="star-fill">★</span>
+                            <span class="star-fill">★</span>
+                            <span class="star-fill">★</span>
+                            <span class="star-half">★</span>
+                        </div>
+                        <span class="rating-text"><strong>4.5 / 5</strong> rating based on <span id="hero-reviews-count">4</span> reviews</span>
+                    </div>
+
+                    <div class="hero-actions">
+                        <a href="#booking" class="btn btn-primary">Book Free Consultation</a>
+                        <a href="#services" class="btn btn-secondary">Explore Services</a>
+                    </div>
+
+                    <div class="hero-features-list">
+                        <div class="feature-item">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><path d="m22 4-10 10.01-3-30"></path></svg>
+                            <span>Advanced Sanitization</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><path d="m22 4-10 10.01-3-30"></path></svg>
+                            <span>Modern Dental Chairs</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><path d="m22 4-10 10.01-3-30"></path></svg>
+                            <span>Daily Working Hours</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="visual-card glass-panel">
+                        <div class="quick-clinic-card">
+                            <div class="clinic-brand-header">
+                                <svg class="clinic-brand-icon" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-color); margin-bottom: 0.75rem; filter: drop-shadow(0 0 6px var(--primary-glow));">
+                                    <path d="M12 2C6.5 2 2 6 2 12c0 2.5 1.5 5 3.5 6.5.5.4 1 1 1 2 0 1 .5 1.5 1.5 1.5h8c1 0 1.5-.5 1.5-1.5 0-1 .5-1.6 1-2 2-1.5 3.5-4 3.5-6.5 0-6-4.5-10-10-10z"></path>
+                                    <path d="M8 8.5c1 0 2-.5 2-1.5s-.5-1-1.5-1"></path>
+                                </svg>
+                                <h3 style="font-size: 1.6rem; font-weight: 800; margin-bottom: 0.25rem;">Priya Dental Care</h3>
+                                <p style="color: var(--text-muted); font-size: 0.9rem; font-weight: 500;">Dasarahosahalli, Kolar</p>
+                            </div>
+                            
+                            <div class="quick-info-grid" style="display: flex; flex-direction: column; gap: 1.15rem; margin: 1.75rem 0 2rem; border-top: 1px solid var(--card-border); padding-top: 1.5rem;">
+                                <div class="quick-info-item" style="display: flex; align-items: center; gap: 0.85rem;">
+                                    <span class="qi-icon" style="font-size: 1.25rem; background: var(--bg-tertiary); width: 38px; height: 38px; display: flex; align-items: center; justify-content: center; border-radius: 50%; border: 1px solid var(--card-border);">⭐</span>
+                                    <div class="qi-text" style="display: flex; flex-direction: column; line-height: 1.35;">
+                                        <span class="qi-label" style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase;">Rating</span>
+                                        <span class="qi-val" style="font-size: 0.95rem; font-weight: 600; color: var(--text-secondary);">4.5 / 5 (4 Reviews)</span>
+                                    </div>
+                                </div>
+                                <div class="quick-info-item" style="display: flex; align-items: center; gap: 0.85rem;">
+                                    <span class="qi-icon" style="font-size: 1.25rem; background: var(--bg-tertiary); width: 38px; height: 38px; display: flex; align-items: center; justify-content: center; border-radius: 50%; border: 1px solid var(--card-border);">📞</span>
+                                    <div class="qi-text" style="display: flex; flex-direction: column; line-height: 1.35;">
+                                        <span class="qi-label" style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase;">Enquiries</span>
+                                        <a href="tel:9480176835" class="qi-val" style="font-size: 0.95rem; font-weight: 700; color: var(--primary-color);">+91 94801 76835</a>
+                                    </div>
+                                </div>
+                                <div class="quick-info-item" style="display: flex; align-items: center; gap: 0.85rem;">
+                                    <span class="qi-icon" style="font-size: 1.25rem; background: var(--bg-tertiary); width: 38px; height: 38px; display: flex; align-items: center; justify-content: center; border-radius: 50%; border: 1px solid var(--card-border);">📍</span>
+                                    <div class="qi-text" style="display: flex; flex-direction: column; line-height: 1.35;">
+                                        <span class="qi-label" style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase;">Landmark</span>
+                                        <span class="qi-val" style="font-size: 0.95rem; font-weight: 600; color: var(--text-secondary);">Near Five Star Chicken</span>
+                                    </div>
+                                </div>
+                                <div class="quick-info-item" style="display: flex; align-items: center; gap: 0.85rem;">
+                                    <span class="qi-icon" style="font-size: 1.25rem; background: var(--bg-tertiary); width: 38px; height: 38px; display: flex; align-items: center; justify-content: center; border-radius: 50%; border: 1px solid var(--card-border);">⏰</span>
+                                    <div class="qi-text" style="display: flex; flex-direction: column; line-height: 1.35;">
+                                        <span class="qi-label" style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase;">Timings</span>
+                                        <span class="qi-val" style="font-size: 0.95rem; font-weight: 600; color: var(--text-secondary);">Mon - Sun (9:30 AM - 8:30 PM)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <a href="#booking" class="btn btn-accent" style="width: 100%; border-radius: var(--border-radius-sm); font-weight: 700;">Book Online Visit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Status Bar -->
+        <section class="status-bar-section">
+            <div class="container">
+                <div class="status-bar-card glass-panel">
+                    <div class="status-indicator">
+                        <div class="status-dot" id="status-dot"></div>
+                        <span class="status-badge-text" id="status-badge-text">Calculating status...</span>
+                    </div>
+                    <div class="status-details">
+                        <span class="status-hours-title">Business Hours:</span>
+                        <span class="status-hours-value">Monday to Sunday, 09:30 AM - 08:30 PM</span>
+                    </div>
+                    <a href="#booking" class="status-action-link">Schedule Visit &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Clinical Excellence</span>
+                    <h2 class="section-title">Comprehensive Care For Your Smile</h2>
+                    <p class="section-subtitle">We utilize cutting-edge equipment and diagnostics to offer comfortable dental care tailored to patients of all ages.</p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card card-hover-effect">
+                        <div class="service-img-wrapper">
+                            <img src="assets/oral-exam.jpg" alt="Comprehensive Oral Exam - Diagnostic Consultation" class="service-img">
+                        </div>
+                        <div class="service-card-body">
+                            <div class="service-icon-container">
+                                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M2 12h20M12 2v20M8.5 8.5l7 7M15.5 8.5l-7 7"></path>
+                                </svg>
+                            </div>
+                            <h3 class="service-name">Comprehensive Oral Exam</h3>
+                            <p class="service-desc">Complete dental assessment and diagnostic checkup, diagnosing concerns early with direct consultation from Dr. Priyadarshini S.</p>
+                            <ul class="service-bullet-points">
+                                <li>Periodontal Evaluation</li>
+                                <li>X-Ray Analysis Support</li>
+                                <li>Digital Dental Mapping</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card card-hover-effect">
+                        <div class="service-img-wrapper">
+                            <img src="assets/orthodontics.jpg" alt="Orthodontic Treatments - Braces & Aligners" class="service-img">
+                        </div>
+                        <div class="service-card-body">
+                            <div class="service-icon-container">
+                                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="service-name">Orthodontic Treatments</h3>
+                            <p class="service-desc">Teeth straightening and alignment solutions for adults, teenagers, and kids to correct dental bite issues.</p>
+                            <ul class="service-bullet-points">
+                                <li>Traditional Metal Braces</li>
+                                <li>Ceramic Aesthetic Braces</li>
+                                <li>Clear Aligner Solutions</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card card-hover-effect">
+                        <div class="service-img-wrapper">
+                            <img src="assets/root-canal.jpg" alt="Root Canal Therapy - Painless Endodontic Care" class="service-img">
+                        </div>
+                        <div class="service-card-body">
+                            <div class="service-icon-container">
+                                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="service-name">Root Canal Therapy</h3>
+                            <p class="service-desc">Relieve toothache and save infected natural teeth with advanced, painless root canal procedures under sterile conditions.</p>
+                            <ul class="service-bullet-points">
+                                <li>Micro-Endodontic Cleansing</li>
+                                <li>High-Grade Dental Sealants</li>
+                                <li>Post-RCT Protective Crowns</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card card-hover-effect">
+                        <div class="service-img-wrapper">
+                            <img src="assets/restorations.jpg" alt="Dental Restorations - Crowns, Bridges & Implants" class="service-img">
+                        </div>
+                        <div class="service-card-body">
+                            <div class="service-icon-container">
+                                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="service-name">Dental Restorations</h3>
+                            <p class="service-desc">Premium composite fillings, crowns, and implants designed to rebuild missing teeth structure beautifully.</p>
+                            <ul class="service-bullet-points">
+                                <li>Tooth-Colored Composite Fillings</li>
+                                <li>Zirconia and Porcelain Crowns</li>
+                                <li>Dental Bridge Installations</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="service-card card-hover-effect">
+                        <div class="service-img-wrapper">
+                            <img src="assets/cosmetic.jpg" alt="Cosmetic Dentistry - Smile Design & Whitening" class="service-img">
+                        </div>
+                        <div class="service-card-body">
+                            <div class="service-icon-container">
+                                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                </svg>
+                            </div>
+                            <h3 class="service-name">Cosmetic Dentistry</h3>
+                            <p class="service-desc">Enhance your smile's radiance and configuration using customized cosmetic whitening and bonding treatments.</p>
+                            <ul class="service-bullet-points">
+                                <li>Laser Teeth Whitening</li>
+                                <li>Emax Dental Veneers</li>
+                                <li>Composite Smile Contouring</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Service 6 -->
+                    <div class="service-card card-hover-effect">
+                        <div class="service-img-wrapper">
+                            <img src="assets/pediatric.jpg" alt="Pediatric Dental Care - Gentle Child Care" class="service-img">
+                        </div>
+                        <div class="service-card-body">
+                            <div class="service-icon-container">
+                                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </div>
+                            <h3 class="service-name">Pediatric Dental Care</h3>
+                            <p class="service-desc">Gentle, warm, and friendly dental care curated specifically for children, making clinical visits stress-free.</p>
+                            <ul class="service-bullet-points">
+                                <li>Fluoride Cavity Barriers</li>
+                                <li>Dental Fissure Sealants</li>
+                                <li>Habit Breaking Counseling</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet the Doctor -->
+        <section class="doctor-section" id="doctor">
+            <div class="container doctor-container">
+                <div class="doctor-details-content">
+                    <span class="section-tag">Chief Dentist & Owner</span>
+                    <h2 class="doctor-name">Dr. Priyadarshini S</h2>
+                    <span class="doctor-title">B.D.S | Lead Oral Care Specialist &bull; 5+ Years Experience</span>
+                    
+                    <p class="doctor-bio">Dr. Priyadarshini S is a dedicated and compassionate dental health professional who established Priya Dental Care to bring state-of-the-art, affordable dental care directly to Dasarahosahalli, Kolar.</p>
+                    <p class="doctor-bio-secondary">She believes in a patient-first dental approach, taking time to explain procedures clearly, eliminating clinical anxiety, and designing customized plans that fit every patient's lifestyle and budget.</p>
+
+                    <div class="doctor-strengths">
+                        <div class="strength-card">
+                            <span class="strength-icon">🩺</span>
+                            <span class="strength-label">Expert Diagnosis</span>
+                        </div>
+                        <div class="strength-card">
+                            <span class="strength-icon">✨</span>
+                            <span class="strength-label">Painless Care</span>
+                        </div>
+                        <div class="strength-card">
+                            <span class="strength-icon">🦷</span>
+                            <span class="strength-label">Crowns & Implants</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clinic Gallery Section -->
+        <section class="gallery-section" id="gallery">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Take A Virtual Tour</span>
+                    <h2 class="section-title">Clinic Gallery</h2>
+                    <p class="section-subtitle">Real interior and exterior photos of Priya Dental Care clinic in Dasarahosahalli, Kolar.</p>
+                </div>
+
+                <div class="gallery-grid">
+                    <!-- Gallery Item 1 -->
+                    <div class="gallery-item-card card-hover-effect">
+                        <div class="gallery-img-container" data-title="Clinic Entrance" data-desc="Featuring our signature purple signage, dental graphics, and step access. Located near Five Star Chicken, Dasarahosahalli.">
+                            <img src="assets/clinic-exterior.jpg" alt="Priya Dental Care clinic entrance with purple signage, dental imagery, and steps leading to the door" class="gallery-thumbnail">
+                            <div class="gallery-zoom-overlay">
+                                <span class="zoom-icon">🔍 Click to Expand</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 2 -->
+                    <div class="gallery-item-card card-hover-effect">
+                        <div class="gallery-img-container" data-title="Treatment Room & Equipment" data-desc="Equipped with a modern dental chair, overhead lighting, specialized tools, and strict sanitization systems.">
+                            <img src="assets/clinic-interior.jpg" alt="Dental chair with overhead light, tools, and equipment in a clean clinic room." class="gallery-thumbnail">
+                            <div class="gallery-zoom-overlay">
+                                <span class="zoom-icon">🔍 Click to Expand</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox Modal container -->
+        <div class="lightbox-modal" id="lightbox-modal">
+            <span class="lightbox-close" id="lightbox-close">&times;</span>
+            <div class="lightbox-content">
+                <img src="" alt="" class="lightbox-img" id="lightbox-img">
+                <div class="lightbox-caption" id="lightbox-caption">Caption text goes here</div>
+            </div>
+        </div>
+
+        <!-- Live Patient Reviews / Testimonials -->
+        <section class="reviews-section" id="reviews">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Patient Testimonials</span>
+                    <h2 class="section-title">What Our Patients Say</h2>
+                    <p class="section-subtitle">Real experiences shared by verified patients who visited Dr. Priyadarshini S.</p>
+                </div>
+
+                <div class="reviews-summary-card glass-panel">
+                    <div class="average-rating-container">
+                        <span class="avg-rating-value" id="avg-rating-value">4.5</span>
+                        <div class="avg-stars-container">
+                            <div class="stars" id="avg-stars-display">
+                                <span class="star-fill">★</span>
+                                <span class="star-fill">★</span>
+                                <span class="star-fill">★</span>
+                                <span class="star-fill">★</span>
+                                <span class="star-half">★</span>
+                            </div>
+                            <span class="review-totals" id="review-totals-text">Based on 4 reviews</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Carousel Slider -->
+                    <div class="testimonial-slider-container">
+                        <div class="testimonial-slider" id="testimonial-slider">
+                            <!-- Seed Review 1 -->
+                            <div class="testimonial-card">
+                                <div class="stars">
+                                    <span class="star-fill">★</span>
+                                    <span class="star-fill">★</span>
+                                    <span class="star-fill">★</span>
+                                    <span class="star-fill">★</span>
+                                    <span class="star-fill">★</span>
+                                </div>
+                                <p class="testimonial-text">"Excellent clinical diagnosis by Dr. Priyadarshini S. The treatment room was extremely clean and hygienic. She explained the entire RCT process and performed it absolutely painlessly. Highly satisfied!"</p>
+                                <div class="testimonial-meta">
+                                    <span class="t-author">Rahul K.</span>
+                                    <span class="t-date">2 weeks ago</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Seed Review 2 -->
+                            <div class="testimonial-card">
+                                <div class="stars">
+                                    <span class="star-fill">★</span>
+                                    <span class="star-fill">★</span>
+                                    <span class="star-fill">★</span>
+                                    <span class="star-fill">★</span>
+                                    <span style="color: rgba(251, 191, 36, 0.25)">★</span>
+                                </div>
+                                <p class="testimonial-text">"Very professional dentist. Explains the health issue clearly before recommending braces. The staff is polite, and the pricing is reasonable compared to other clinics in Kolar."</p>
+                                <div class="testimonial-meta">
+                                    <span class="t-author">Swati M.</span>
+                                    <span class="t-date">3 weeks ago</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Seed Review 3 -->
+                            <div class="testimonial-card">
+                                <div class="stars">
+                                    <span class="star-fill">★</span>
+                                    <span class="star-fill">★</span>
+                                    <span class="star-fill">★</span>
+                                    <span class="star-fill">★</span>
+                                    <span class="star-fill">★</span>
+                                </div>
+                                <p class="testimonial-text">"Best dental clinic in Dasarahosahalli. My 8-year-old son had zero anxiety during his teeth cleaning visit. Dr. Priyadarshini is warm and patient-oriented."</p>
+                                <div class="testimonial-meta">
+                                    <span class="t-author">Anand Rao</span>
+                                    <span class="t-date">1 month ago</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Seed Review 4 -->
+                            <div class="testimonial-card">
+                                <div class="stars">
+                                    <span class="star-fill">★</span>
+                                    <span class="star-fill">★</span>
+                                    <span class="star-fill">★</span>
+                                    <span class="star-fill">★</span>
+                                    <span style="color: rgba(251, 191, 36, 0.25)">★</span>
+                                </div>
+                                <p class="testimonial-text">"Conveniently located near the Five Star Chicken landmark, with ample parking space. The clinic is 100% sanitized. Highly recommend checking out their consultation."</p>
+                                <div class="testimonial-meta">
+                                    <span class="t-author">Priya G.</span>
+                                    <span class="t-date">1 month ago</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-controls">
+                            <button class="slider-btn prev-btn" id="prev-review-btn" aria-label="Previous Testimonial">&larr;</button>
+                            <button class="slider-btn next-btn" id="next-review-btn" aria-label="Next Testimonial">&rarr;</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add Review Form -->
+                <div class="add-review-container">
+                    <button class="btn btn-secondary" id="btn-toggle-review-form">Write a Patient Review</button>
+                    
+                    <form id="review-form" class="review-form glass-panel">
+                        <h3>Share Your Dental Experience</h3>
+                        <div class="form-row-double">
+                            <div class="form-group">
+                                <label for="review-author">Your Name</label>
+                                <input type="text" id="review-author" placeholder="Jane Smith" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Rate Your Experience</label>
+                                <div class="rating-stars-input" id="rating-stars-input">
+                                    <span data-val="1">★</span>
+                                    <span data-val="2">★</span>
+                                    <span data-val="3">★</span>
+                                    <span data-val="4">★</span>
+                                    <span data-val="5">★</span>
+                                </div>
+                                <input type="hidden" id="review-rating-value" value="5" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="review-content">Review Description</label>
+                            <textarea id="review-content" placeholder="Describe the quality of care, treatment process, and environment..." rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Review</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQs Accordion Section -->
+        <section class="faqs-section" id="faqs">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Got Questions?</span>
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Find immediate answers to common questions about dental care, treatments, and operations at Priya Dental Care.</p>
+                </div>
+
+                <div class="faqs-accordion" id="faqs-accordion">
+                    <!-- FAQ 1 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Is there a difference between dentists and orthodontists?</span>
+                            <span class="faq-toggle-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Dentists deal with a wide variety of oral health problems including cleanings, fillings, root canals, and crowns. Orthodontists are specialized dentists who focus specifically on correcting the alignment of teeth and jaws using braces, aligners, and dental appliances.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Can general dentists treat orthodontic conditions?</span>
+                            <span class="faq-toggle-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, a few dentists are qualified and certified as both orthodontists and dentists, allowing them to manage cleanings and aligners under the same roof. You can check directly with Priya Dental Care during your consultation regarding specific treatment programs.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How often should I visit a dentist?</span>
+                            <span class="faq-toggle-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>It is standard clinical practice to visit a dentist twice a year, or once every three to six months, to clean plaque and identify decay early before it warrants complex root canal treatments.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What areas of expertise does Priya Dental Care in Kolar have?</span>
+                            <span class="faq-toggle-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Priya Dental Care specializes in a wide spectrum of dental procedures, including diagnostic consultations, preventive dental hygiene, pediatric care, painless root canals (RCT), tooth extraction, braces, dental crowns, bridges, and customized dental restorations.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 5 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What are the business hours of operation of Priya Dental Care?</span>
+                            <span class="faq-toggle-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Priya Dental Care operates all seven days of the week. Our doors open from Monday to Sunday, between 9:30 AM and 8:30 PM, ensuring convenience for working individuals and emergencies alike.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 6 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Where is the Priya Dental Care clinic in Dasarahosahalli located?</span>
+                            <span class="faq-toggle-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>The clinic is located in Dasarahosahalli, Kolar (Pincode: 563115), at No. 2, situated near the prominent landmark <strong>Near Five Star Chicken</strong>, making it highly accessible via buses, auto-rickshaws, and private vehicles.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 7 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How can I contact Priya Dental Care in Dasarahosahalli, Kolar?</span>
+                            <span class="faq-toggle-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>You can contact Priya Dental Care directly by dialing our clinic representative at <strong>+91 9480176835</strong>. Additionally, you can request an appointment through our online booking widget on this website.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Booking Section -->
+        <section class="booking-section" id="booking">
+            <div class="container">
+                <div class="booking-grid">
+                    <div class="booking-intro-content">
+                        <span class="section-tag">Convenient Appointments</span>
+                        <h2 class="section-title">Schedule Your Visit Online</h2>
+                        <p class="section-subtitle">Take control of your dental health. Reserve your time slot in under 2 minutes. We will send you confirmation coordinates instantly.</p>
+
+                        <div class="booking-guarantees">
+                            <div class="guarantee-item">
+                                <span class="guarantee-check">✓</span>
+                                <span>Zero Waiting Time at the Clinic</span>
+                            </div>
+                            <div class="guarantee-item">
+                                <span class="guarantee-check">✓</span>
+                                <span>Emergency Appointments Prioritized</span>
+                            </div>
+                            <div class="guarantee-item">
+                                <span class="guarantee-check">✓</span>
+                                <span>Free Rescheduling up to 2 Hours Before</span>
+                            </div>
+                        </div>
+
+                        <!-- Mini Dashboard Toggle -->
+                        <div class="booking-switch-dashboard">
+                            <span>Already have an appointment?</span>
+                            <button id="btn-toggle-dashboard" class="btn-dashboard-toggle">Manage Bookings Dashboard</button>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Form Widget -->
+                    <div class="booking-widget-card glass-panel" id="booking-widget-card">
+                        
+                        <!-- Form View -->
+                        <form id="appointment-form" class="appointment-form active">
+                            <div class="form-progress-bar">
+                                <div class="step-line" id="progress-line"></div>
+                                <div class="step-node active" data-step="1">1</div>
+                                <div class="step-node" data-step="2">2</div>
+                                <div class="step-node" data-step="3">3</div>
+                            </div>
+
+                            <!-- Step 1: Choose Service & Date -->
+                            <div class="form-step active" id="step-1">
+                                <h3 class="step-title">1. Service & Date</h3>
+                                <div class="form-group">
+                                    <label for="booking-service">Select Dental Service</label>
+                                    <select id="booking-service" required>
+                                        <option value="" disabled selected>-- Choose Service --</option>
+                                        <option value="Oral Consultation">General Consultation / Examination</option>
+                                        <option value="Orthodontics Braces">Orthodontics & Teeth Alignment</option>
+                                        <option value="Root Canal Therapy">Root Canal Treatment (RCT)</option>
+                                        <option value="Crowns & Implants">Crowns, Bridges & Implants</option>
+                                        <option value="Teeth Whitening">Cosmetic Whitening / Veneers</option>
+                                        <option value="Pediatric Care">Pediatric (Kids) Dentistry</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="booking-date">Choose Appointment Date</label>
+                                    <input type="date" id="booking-date" required>
+                                </div>
+                                <button type="button" class="btn btn-primary btn-next" id="goto-step-2">Continue to Time Slots</button>
+                            </div>
+
+                            <!-- Step 2: Select Time Slot -->
+                            <div class="form-step" id="step-2">
+                                <h3 class="step-title">2. Choose Time Slot</h3>
+                                <p class="slot-instruction">Available slots for <strong id="selected-date-preview">Selected Date</strong>:</p>
+                                <div class="time-slots-container" id="time-slots-container">
+                                    <!-- Dynamic Time Slot Pills will load here -->
+                                </div>
+                                <input type="hidden" id="selected-time-slot" required>
+                                <div class="step-actions">
+                                    <button type="button" class="btn btn-secondary btn-back" id="back-to-step-1">Back</button>
+                                    <button type="button" class="btn btn-primary btn-next" id="goto-step-3" disabled>Continue to Details</button>
+                                </div>
+                            </div>
+
+                            <!-- Step 3: Patient Info -->
+                            <div class="form-step" id="step-3">
+                                <h3 class="step-title">3. Patient Details</h3>
+                                <div class="form-group">
+                                    <label for="patient-name">Full Name</label>
+                                    <input type="text" id="patient-name" placeholder="John Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="patient-phone">Phone Number</label>
+                                    <input type="tel" id="patient-phone" placeholder="9480176835" required pattern="[0-9]{10}">
+                                </div>
+                                <div class="form-group">
+                                    <label for="patient-notes">Additional Notes / Symptoms (Optional)</label>
+                                    <textarea id="patient-notes" placeholder="Any specific details Dr. Priyadarshini should know..." rows="3"></textarea>
+                                </div>
+                                <div class="step-actions">
+                                    <button type="button" class="btn btn-secondary btn-back" id="back-to-step-2">Back</button>
+                                    <button type="submit" class="btn btn-accent" id="submit-booking-btn">Confirm Appointment</button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <!-- Dashboard View (Hidden by default) -->
+                        <div id="booking-dashboard" class="booking-dashboard">
+                            <div class="dashboard-header">
+                                <h3>Your Scheduled Appointments</h3>
+                                <button id="btn-close-dashboard" class="btn-close-dash">&times; Close</button>
+                            </div>
+                            <div id="dashboard-list" class="dashboard-list">
+                                <!-- Dynamic Local storage bookings render here -->
+                            </div>
+                        </div>
+
+                        <!-- Success receipt (Hidden by default) -->
+                        <div id="booking-receipt" class="booking-receipt">
+                            <div class="receipt-success-icon">✓</div>
+                            <h3>Booking Confirmed!</h3>
+                            <p class="receipt-subtitle">Your appointment details are saved below. Please save or print this receipt.</p>
+                            
+                            <div class="receipt-card">
+                                <div class="receipt-row"><strong>Appointment ID:</strong> <span id="receipt-id">#PD-834927</span></div>
+                                <div class="receipt-row"><strong>Patient Name:</strong> <span id="receipt-name">John Doe</span></div>
+                                <div class="receipt-row"><strong>Service:</strong> <span id="receipt-service">Root Canal</span></div>
+                                <div class="receipt-row"><strong>Date:</strong> <span id="receipt-date">2026-08-01</span></div>
+                                <div class="receipt-row"><strong>Time Slot:</strong> <span id="receipt-time">10:30 AM</span></div>
+                                <div class="receipt-row"><strong>Doctor:</strong> <span>Dr. Priyadarshini S</span></div>
+                                <div class="receipt-row"><strong>Location:</strong> <span class="loc-short">Dasarahosahalli, Kolar</span></div>
+                            </div>
+                            
+                            <div class="receipt-actions">
+                                <button class="btn btn-secondary" onclick="window.print()">Print Receipt</button>
+                                <button class="btn btn-primary" id="btn-book-another">Book Another</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Map & Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container contact-container">
+                <div class="contact-info-panel">
+                    <span class="section-tag">Reach Us Directly</span>
+                    <h2 class="section-title">Contact & Location Info</h2>
+                    
+                    <div class="contact-details-list">
+                        <!-- Phone -->
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">📞</div>
+                            <div class="contact-info-text">
+                                <span class="contact-label">Phone Number</span>
+                                <a href="tel:9480176835" class="contact-value">+91 94801 76835</a>
+                            </div>
+                        </div>
+
+                        <!-- Address -->
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">📍</div>
+                            <div class="contact-info-text">
+                                <span class="contact-label">Clinic Address</span>
+                                <span class="contact-value">No.2, Dasarahosahalli, Near Five Star Chicken, Kolar, Karnataka - 563115</span>
+                            </div>
+                        </div>
+
+                        <!-- Landmark -->
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">🏢</div>
+                            <div class="contact-info-text">
+                                <span class="contact-label">Landmark</span>
+                                <span class="contact-value">Near Five Star Chicken</span>
+                            </div>
+                        </div>
+
+                        <!-- Working Days -->
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">⏰</div>
+                            <div class="contact-info-text">
+                                <span class="contact-label">Clinic Hours</span>
+                                <span class="contact-value">Monday – Sunday: 9:30 AM – 8:30 PM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-quick-cta">
+                        <a href="tel:9480176835" class="btn btn-primary">Call Now to Enquire</a>
+                    </div>
+                </div>
+
+                <div class="contact-map-wrapper">
+                    <!-- Leaflet map container -->
+                    <div id="clinic-map" class="clinic-map-container"></div>
+                    <div class="map-overlay-badge">
+                        <span class="map-badge-icon">📍</span>
+                        <span class="map-badge-text">Interactive Map (Priya Dental Care)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <svg class="logo-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2C6.5 2 2 6 2 12c0 2.5 1.5 5 3.5 6.5.5.4 1 1 1 2 0 1 .5 1.5 1.5 1.5h8c1 0 1.5-.5 1.5-1.5 0-1 .5-1.6 1-2 2-1.5 3.5-4 3.5-6.5 0-6-4.5-10-10-10z"></path>
+                    </svg>
+                    <span class="logo-text">Priya <span class="logo-highlight">Dental</span></span>
+                </a>
+                <p class="footer-desc">Providing healthy smiles to the Kolar community through caring treatment plans and high-grade diagnostics. Led by Dr. Priyadarshini S.</p>
+                
+                <div class="contact-badge-footer">
+                    <span>Call Us: </span>
+                    <a href="tel:9480176835" class="footer-phone">+91 94801 76835</a>
+                </div>
+            </div>
+
+            <div class="footer-links-group">
+                <h3>Quick Navigation</h3>
+                <a href="#about">Home</a>
+                <a href="#services">Services</a>
+                <a href="#doctor">Our Doctor</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#faqs">FAQs</a>
+                <a href="#booking">Book Appointment</a>
+                <a href="#contact">Contacts</a>
+            </div>
+
+            <div class="footer-hours-group">
+                <h3>Clinic Timing</h3>
+                <div class="timing-row"><span>Monday - Friday:</span><span>9:30 AM - 8:30 PM</span></div>
+                <div class="timing-row"><span>Saturday:</span><span>9:30 AM - 8:30 PM</span></div>
+                <div class="timing-row"><span>Sunday:</span><span>9:30 AM - 8:30 PM</span></div>
+                <p class="footer-note">*Appointments are recommended to minimize waiting times.</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2026 Priya Dental Care. All Rights Reserved. Near Five Star Chicken, Dasarahosahalli, Kolar.</p>
+                <a href="#about" class="back-to-top" id="back-to-top">Back to top &uarr;</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- App Logic Script -->
+    <script src="app.js"></script>
+</body>
+</html>
