@@ -126,7 +126,7 @@ h1, h2, h3, h4 {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(var(--bg-primary), 0.75);
+    background-color: rgba(var(--bg-primary-rgb), 0.85);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--card-border);
@@ -171,8 +171,8 @@ h1, h2, h3, h4 {
 
 .nav-link {
     font-size: 0.95rem;
-    font-weight: 500;
-    color: var(--text-secondary);
+    font-weight: 600;
+    color: var(--text-primary);
     position: relative;
     padding: 0.35rem 0;
     transition: color var(--transition-fast);
