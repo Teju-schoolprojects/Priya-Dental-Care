@@ -453,7 +453,7 @@ h1, h2, h3, h4 {
 
 .hero-subtitle {
     font-size: 1.125rem;
-    color: var(--text-secondary);
+    color: #FFFFFF;
     margin-bottom: 1.75rem;
     max-width: 600px;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.55);
