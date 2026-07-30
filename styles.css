@@ -401,14 +401,15 @@ h1, h2, h3, h4 {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background-color: var(--bg-tertiary);
-    border: 1px solid var(--card-border);
+    background-color: rgba(var(--bg-primary-rgb), 0.8);
+    border: 1px solid var(--primary-color);
     padding: 0.35rem 0.85rem;
     border-radius: 50px;
     font-size: 0.78rem;
     font-weight: 600;
-    color: var(--primary-color);
+    color: #FFFFFF;
     margin-bottom: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .pulse-dot {
@@ -495,7 +496,8 @@ h1, h2, h3, h4 {
 
 .rating-text {
     font-size: 0.95rem;
-    color: var(--text-secondary);
+    color: #FFFFFF;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
 }
 
 .hero-actions {
@@ -517,8 +519,9 @@ h1, h2, h3, h4 {
     align-items: center;
     gap: 0.5rem;
     font-size: 0.9rem;
-    color: var(--text-secondary);
-    font-weight: 500;
+    color: #FFFFFF;
+    font-weight: 600;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
 }
 
 .feature-item svg {
