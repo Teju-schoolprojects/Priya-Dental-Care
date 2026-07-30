@@ -329,25 +329,32 @@ h1, h2, h3, h4 {
     overflow: hidden;
 }
 
-.hero-video-wrapper {
-    position: relative;
-    border-radius: var(--border-radius-lg);
-    overflow: hidden;
-    box-shadow: var(--card-shadow);
-    border: 1px solid var(--card-border);
-    background-color: var(--bg-secondary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+.hero-video-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    object-fit: contain; /* Prevents any cropping (no half-images) */
+    object-position: right center;
+    z-index: -2;
+    pointer-events: none;
 }
 
-.hero-column-video {
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
-    max-height: 480px;
-    display: block;
-    object-fit: contain; /* Prevents any cropping (no half-images) */
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        var(--bg-primary) 0%,
+        var(--bg-primary) 40%,
+        rgba(var(--bg-primary-rgb), 0.75) 55%,
+        transparent 75%
+    );
+    z-index: -1;
 }
 
 /* Background Glowing Orbs */
@@ -376,10 +383,12 @@ h1, h2, h3, h4 {
 }
 
 .hero-container {
-    display: grid;
-    grid-template-columns: 1.25fr 0.75fr;
-    gap: 3.5rem;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    width: 100%;
 }
 
 .hero-content {
@@ -2126,6 +2135,13 @@ a.contact-value:hover {
    Responsive Design & Mobile Settings
    ========================================================================== */
 @media (max-width: 1024px) {
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 8rem;
+    }
+
     .hero-container,
     .doctor-container,
     .booking-grid,
@@ -2135,7 +2151,25 @@ a.contact-value:hover {
     }
 
     .hero-container {
+        order: 1;
         text-align: center;
+    }
+    
+    .hero-video-bg {
+        position: relative;
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        order: 2;
+        margin-top: 2.5rem;
+        z-index: 1;
+        border-radius: var(--border-radius-md);
+        box-shadow: var(--card-shadow);
+        border: 1px solid var(--card-border);
+    }
+    
+    .hero-overlay {
+        display: none;
     }
     
     .hero-content {
